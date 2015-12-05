@@ -10,6 +10,16 @@ import java.util.HashSet;
  * @author huangjh
  *	去除文件中的重复链接
  */
+//TODO 
+/*
+我
+我
+他
+他
+你
+工
+工    里面的我排重后还有两个
+*/
 public class DelRepeat {
 
 	public static void main(String[] args) {
@@ -17,7 +27,7 @@ public class DelRepeat {
 		
 		//1.读取外部文件，存入hashset进行排重
 		//2.打印hashset
-		String fileName = "C:\\Users\\huangjh\\Desktop\\1.txt";
+		String fileName = "D:\\1.txt";
 		FileReader fr;
 		try {
 			fr = new FileReader(fileName );
