@@ -8,6 +8,7 @@ public class Test {
 		
 		String str1 = "http://192.168.1.14:6080";
 		
+		System.out.println("--");
 		System.out.println(str1+temp);
 	}
 

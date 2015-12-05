@@ -26,7 +26,7 @@ import javax.swing.JFrame;
 public class MainClass implements Runnable{
 	private JFrame window;
 	
-	private static final long SECONDS = 50*60;
+	private static final long SECONDS = 10*60;
 	
 	public MainClass(){
 		window = new JFrame();
