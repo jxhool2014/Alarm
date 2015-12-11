@@ -25,8 +25,9 @@ import javax.swing.JFrame;
  */
 public class MainClass implements Runnable{
 	private JFrame window;
+	private Button button = new Button("BEGIN");
 	
-	private static final long SECONDS = 10*60;
+	private static final long SECONDS = 40*60;
 	
 	public MainClass(){
 		window = new JFrame();
@@ -35,14 +36,12 @@ public class MainClass implements Runnable{
 	    window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    window.getContentPane().setLayout(new BorderLayout(0, 0));
 	    
-	    Button button = new Button("开始");
 	    button.setBackground(new Color(1, 255, 255, 0));
 	    //button.setBounds(10, 10, 100, 50);
 	    
 	    button.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-	            System.out.println("你好世界！");
 	            Thread thread = new Thread(new MainClass());
 	    		thread.start();
 	    		button.setEnabled(false);
@@ -65,7 +64,7 @@ public class MainClass implements Runnable{
 		c.set(Calendar.MINUTE, 0);
 		c.set(Calendar.SECOND, 0);
 
-
+		System.out.println(button);
 		// 获取2012-12-21 0:0:0时间点对应的毫秒数
 		long endTime = c.getTimeInMillis();
 		// 获取系统当前时间
