@@ -27,7 +27,7 @@ public class MainClass implements Runnable{
 	private JFrame window;
 	private Button button = new Button("BEGIN");
 	
-	private static final long SECONDS = 40*60;
+	private static final long SECONDS = 3000;
 	
 	public MainClass(){
 		window = new JFrame();
