@@ -42,7 +42,6 @@ public class MainClass implements Runnable{
 	    button.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-	            System.out.println("你好世界！");
 	            Thread thread = new Thread(new MainClass());
 	    		thread.start();
 	    		button.setEnabled(false);
